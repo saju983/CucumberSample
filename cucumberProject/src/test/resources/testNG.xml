@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+
+	<!-- parallel="tests" in the Suite tag makes the two tests run in parallel. -->
+
+	<!-- <test name="FirefoxTest"> <parameter name="browser" value="firefox" 
+		/> <classes> <class name="stepDefination.MultiBrowser" /> </classes> </test> -->
+
+	<test name="Login To Browser Chrome">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="runner.TestRunner" />
+		</classes>
+	</test>
+
+	<!-- <test name="EdgeTest"> <parameter name="browser" value="Edge" /> <classes> 
+		<class name="stepDefination.MultiBrowser"> </class> </classes> </test> -->
+
+</suite>
